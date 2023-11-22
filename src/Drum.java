@@ -2,7 +2,7 @@
  * Конкретний клас для барабанів.
  */
 public class Drum extends MusicalInstrument {
-    private int numberOfDrumheads;
+    private final int numberOfDrumheads;
 
     /**
      * Конструктор класу Drum.

@@ -2,7 +2,7 @@
  * Конкретний клас для гітари.
  */
 public class Guitar extends MusicalInstrument {
-    private int numberOfStrings;
+    private final int numberOfStrings;
 
     /**
      * Конструктор класу Guitar.

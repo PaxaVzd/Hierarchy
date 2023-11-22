@@ -2,9 +2,9 @@
  * Абстрактний клас для представлення музичного інструменту.
  */
 public abstract class MusicalInstrument {
-    private String name;
-    private String material;
-    private double price;
+    private final String name;
+    private final String material;
+    private final double price;
 
     /**
      * Конструктор класу MusicalInstrument.
@@ -17,33 +17,6 @@ public abstract class MusicalInstrument {
         this.name = name;
         this.material = material;
         this.price = price;
-    }
-
-    /**
-     * Отримати назву інструменту.
-     *
-     * @return Назва інструменту.
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Отримати матеріал інструменту.
-     *
-     * @return Матеріал інструменту.
-     */
-    public String getMaterial() {
-        return material;
-    }
-
-    /**
-     * Отримати ціну інструменту.
-     *
-     * @return Ціна інструменту.
-     */
-    public double getPrice() {
-        return price;
     }
 
     /**

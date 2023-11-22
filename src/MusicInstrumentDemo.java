@@ -7,7 +7,7 @@ public class MusicInstrumentDemo {
     /**
      * Точка входу в програму.
      *
-     * @param args Аргументи командного рядка (не використовуються в цій програмі).
+     * @param args Аргументи командного рядка.
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,17 +22,10 @@ public class MusicInstrumentDemo {
             choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:
-                    playGuitar();
-                    break;
-                case 2:
-                    playDrums();
-                    break;
-                case 3:
-                    System.out.println("Завершення програми. До побачення!");
-                    break;
-                default:
-                    System.out.println("Невірний вибір. Будь ласка, введіть правильну опцію.");
+                case 1 -> playGuitar();
+                case 2 -> playDrums();
+                case 3 -> System.out.println("Завершення програми. До побачення!");
+                default -> System.out.println("Невірний вибір. Будь ласка, введіть правильну опцію.");
             }
         } while (choice != 3);
 
